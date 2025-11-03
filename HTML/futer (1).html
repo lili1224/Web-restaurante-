@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gastronomía Étoile</title>
+    <link rel="stylesheet" type="text/css" href="../css/futer.css">
+</head>
+<body>
+    <footer>
+        <p>Contacto: Teléfono: <span id="telefono">+34 666 666 666 </span></p>
+        <p>Correo: <span id="correo">lagastronomiaeliote.restaurante.es</span></p>
+        <p>Fundador: Antoine Dupont</p>
+    </footer>
+
+    <script>
+        // Obtén el elemento del número de teléfono
+        var telefonoElement = document.getElementById('telefono');
+        var correoElemento = document.getElementById('correo');
+
+        correoElemento.addEventListener('click', function(){
+            var respuestacorreo = confirm('¿Quieres escribirnos?');
+
+            if (respuestacorreo){
+                alert('Manda correo a "lagastronomiaeliote.hotmail.com"');
+            }
+            else{
+                alert('Esperamos que contactes con nosotros pronto')
+            }
+        });
+    
+        // Agrega un event listener para el clic en el número de teléfono
+        telefonoElement.addEventListener('click', function() {
+            // Muestra una alerta con dos botones de opción
+            var respuesta = confirm('¿Quieres llamarnos?');
+    
+            // Verifica la respuesta y realiza acciones según la elección del usuario
+            if (respuesta) {
+                // Acción si el usuario elige "Aceptar"
+                alert('Llamando...');
+            } else {
+                // Acción si el usuario elige "Cancelar" o cierra la alerta
+                alert('Llamada cancelada');
+            }
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/qFsS0mT/Leonardo-Vision-XL-I-want-to-generate-a-logo-for-a-restaurant-1.jpg">
+    <title>Nuestra historia</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/historia.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/futer.css">
+</head>
+<body>
+    <header>
+        <h1>Historia de nuestro restaurante</h1>
+    </header>
+    <nav id="barra_navegador">
+        <div class="desplegable">
+            <button><a id="p_inicio" href="inicio.html" onmouseup="subindex()">Inicio</a></button>
+            <div class="index_content">
+                <a id="p_historia" href="historia.html">Nuestra historia</a>
+                <a id="p_ods" href="ods.html">Objetivos ODS</a>
+            </div>
+        </div>
+        <a id="p_menu" href="index.html">Menús</a>
+        <a id="p_pedir" href="Pedir.html">Pedir</a>
+        <a id="p_coment" href="Reseñas.html">Reseñas</a>
+    </nav>
+    <section id="contenido_central">
+        <article>
+            <p>
+                La historia de la fundación de "La Gastronomía Étoile" es una narrativa fascinante que 
+                combina la pasión por la cocina, el amor por la belleza y la visión de un emprendedor visionario. 
+                Esta es la historia de cómo se creó este prestigioso restaurante gourmet:
+            </p>
+        </article>
+        <article>
+            <h3>Inicio de nuestra historia</h3>
+            <div id="perfil">
+                <img id="antonio" src="https://i.ibb.co/KF2GnqQ/Whats-App-Image-2023-12-22-at-11-39-11.jpg" height="250px" width="250px">
+                <p>
+                    Hace varias décadas, en la pintoresca ciudad costera de San Estrella, un chef talentoso llamado 
+                    <a href="https://drive.google.com/file/d/1pGcq62W3N5Nxv6ymjQ2V2dLz5vS-36xj/view?usp=drive_link" target="_blank">Antoine 
+                    Dupont</a> regresó a su ciudad natal después de haber viajado por el mundo y adquirido experiencia culinaria
+                    en algunos de los restaurantes más renombrados de Europa. Antoine había nacido y crecido en San Estrella, 
+                    un lugar conocido por su belleza natural y sus ingredientes frescos del mar y del campo. <br>
+                    
+                    Un día, mientras paseaba por el paseo marítimo, Antoine se detuvo para observar el atardecer sobre el océano y tuvo 
+                    una revelación. Decidió que San Estrella era el lugar perfecto para cumplir su sueño de abrir un restaurante gourmet 
+                    excepcional que celebrara la riqueza de la región y la creatividad culinaria que había adquirido en sus viajes.
+                </p>
+            </div>
+            
+        </article>
+        <article>
+            <h3>Cómo Antonie Dupont plasmo su idea principal</h3>
+            <p>
+                Con una visión en mente, Antoine comenzó a buscar inversores que compartieran su pasión por la gastronomía y la estética. 
+                Reunió un grupo de empresarios locales, amantes del vino y entusiastas de la alta cocina, quienes compartieron su visión y 
+                se convirtieron en socios financieros del proyecto.
+            </p>
+            <p>
+                Juntos, comenzaron a buscar la ubicación perfecta para su restaurante y encontraron una villa mediterránea abandonada que se había 
+                mantenido en el anonimato durante años. Con una inversión considerable, restauraron la villa con meticulosidad, conservando su encanto 
+                original mientras incorporaban comodidades modernas. La villa se convirtió en el hermoso escenario que conocemos hoy como "La Gastronomía Étoile."
+            </p>
+            <p>
+                Antoine seleccionó cuidadosamente su equipo de cocina y personal de servicio, asegurándose de que compartieran su pasión por la excelencia culinaria 
+                y el servicio impecable. Juntos, crearon un menú excepcional que combinaba ingredientes locales con técnicas culinarias de vanguardia.
+            </p>
+        </article>
+        <article>
+            <h3>Inauguración de La Gastronomía Étoile</h3>
+            <p>
+                El día de la inauguración de "La Gastronomía Étoile" fue un evento memorable que atrajo a amantes de la comida de todo el mundo. El restaurante rápidamente 
+                se ganó una reputación de excelencia en la alta cocina y se convirtió en un destino gastronómico de renombre internacional. Desde entonces, "La Gastronomía 
+                Étoile" ha continuado deleitando a sus comensales con su excepcional cocina, su servicio impecable y su entorno elegante. La historia de Antoine Dupont y su 
+                visión se ha convertido en una leyenda en San Estrella, y el restaurante sigue siendo un faro de la gastronomía gourmet en la costa.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Contacto: Teléfono: <span id="telefono">+34 666 666 666 </span></p>
+        <p>Correo: <span id="correo">lagastronomiaeliote.restaurante.es</span></p>
+        <p>Fundador:<a href="https://drive.google.com/file/d/1pGcq62W3N5Nxv6ymjQ2V2dLz5vS-36xj/view?usp=drive_link" target="_blank">Antoine 
+            Dupont</a> </p>
+
+    <script>
+        // Obtén el elemento del número de teléfono
+        var telefonoElement = document.getElementById('telefono');
+        var correoElemento = document.getElementById('correo');
+
+        correoElemento.addEventListener('click', function(){
+            var respuestacorreo = confirm('¿Quieres escribirnos?');
+
+            if (respuestacorreo){
+                alert('Manda correo a "lagastronomiaeliote.hotmail.com"');
+            }
+            else{
+                alert('Esperamos que contactes con nosotros pronto')
+            }
+        });
+    
+        // Agrega un event listener para el clic en el número de teléfono
+        telefonoElement.addEventListener('click', function() {
+            // Muestra una alerta con dos botones de opción
+            var respuesta = confirm('¿Quieres llamarnos?');
+    
+            // Verifica la respuesta y realiza acciones según la elección del usuario
+            if (respuesta) {
+                // Acción si el usuario elige "Aceptar"
+                alert('Llamando...');
+            } else {
+                // Acción si el usuario elige "Cancelar" o cierra la alerta
+                alert('Llamada cancelada');
+            }
+        });
+    </script>
+    </footer>
+
+</body>
+</html>

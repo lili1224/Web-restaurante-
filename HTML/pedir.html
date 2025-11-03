@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar/Pedir</title>
+  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/qFsS0mT/Leonardo-Vision-XL-I-want-to-generate-a-logo-for-a-restaurant-1.jpg">
+  <link rel="stylesheet" href="../CSS/pedir.css">
+  <link rel="stylesheet" href="../CSS/futer.css">
+  <link rel="stylesheet" href="../CSS/header.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="pedir">¿Qué quieres hacer?</h1>
+  </header>
+  <nav id="barra_navegador">
+    <div class="desplegable">
+        <button><a id="p_inicio" href="inicio.html" onmouseup="subindex()">Inicio</a></button>
+        <div class="index_content">
+            <a id="p_historia" href="historia.html">Nuestra historia</a>
+            <a id="p_ods" href="ods.html">Objetivos ODS</a>
+        </div>
+    </div>
+    <a id="p_menu" href="index.html">Menús</a>
+    <a id="p_pedir" href="Pedir.html">Pedir</a>
+    <a id="p_coment" href="Reseñas.html">Reseñas</a>
+  </nav>
+
+  
+
+  <section>
+    <div class="square" onclick="window.location.href='reserva.html'" style="background-color: rgb(237, 154, 32);">
+      <img src="https://i.ibb.co/wQZhv7J/Whats-App-Image-2023-12-22-at-10-44-35-3.jpg" alt="Reserva">
+      <p>Reserva</p>
+    </div>
+    <div class="square" onclick="window.location.href='pedir_llevar.html'" style="background-color: rgb(237, 154, 32);">
+      <img src="https://i.ibb.co/PMhfGmt/Whats-App-Image-2023-12-22-at-10-44-35.jpg" alt="Pedir para llevar">
+      <p>Pide adomicilio</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contacto: Teléfono: <span id="telefono">+34 666 666 666 </span></p>
+    <p>Correo: <span id="correo">lagastronomiaeliote.restaurante.es</span></p>
+    <p>Fundador: Antoine Dupont</p>
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gastronomía Étoile</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/qFsS0mT/Leonardo-Vision-XL-I-want-to-generate-a-logo-for-a-restaurant-1.jpg">
+    <link rel="stylesheet" type="text/css" href="../css/ods.css">
+    <link rel="stylesheet" href="../CSS/futer.css">
+
+</head>
+<body>
+    <header>
+        <h1 id="cabecera_ods">Objetivos ODS</h1>
+    </header>
+    <nav id="barra_navegador">
+        <div class="desplegable">
+            <button><a id="p_inicio" href="inicio.html" onmouseup="subindex()">Inicio</a></button>
+            <div class="index_content">
+                <a id="p_historia" href="historia.html">Nuestra historia</a>
+                <a id="p_ods" href="ods.html">Objetivos ODS</a>
+            </div>
+        </div>
+        <a id="p_menu" href="index.html">Menús</a>
+        <a id="p_pedir" href="Pedir.html">Pedir</a>
+        <a id="p_coment" href="Reseñas.html">Reseñas</a>
+    </nav>
+    <section id="contenido_central">
+        <h2 style="text-align: center;">ODS 12 - Producción y Consumo Responsables</h2>
+        <article id="uno">
+            <h4>Descripción del Enfoque de "La Gastronomía Étoile" en relación con el ODS 12</h4>
+            <p>
+                "La Gastronomía Étoile" se compromete con el <b>ODS 12, Producción y Consumo Responsables</b>, a través de su enfoque consciente y sostenible hacia 
+                la gastronomía gourmet. La visión del restaurante se alinea con los principios de aprovechamiento responsable de los recursos y la promoción de 
+                prácticas culinarias que respeten el medio ambiente y la comunidad local.
+            </p> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gQBJfYlDOvA" title="Objetivos de Desarrollo Sostenible" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <h4>Principales Contribuciones:</h4>
+            <ol>
+                <li>
+                    <b>Uso Responsable de Ingredientes Locales:</b> El restaurante prioriza ingredientes locales frescos y sostenibles, apoyando a los agricultores 
+                    y pescadores locales. Esto no solo promueve la biodiversidad y reduce la huella de carbono, sino que también contribuye al desarrollo económico de 
+                    la comunidad.
+                </li>
+                <li>
+                    <b>Menús Degustación Estacionales:</b> Al ofrecer exclusivamente menús degustación estacionales, "La Gastronomía Étoile" abraza la variabilidad de los
+                     productos de temporada. Este enfoque fomenta prácticas agrícolas sostenibles y reduce la dependencia de ingredientes fuera de temporada, promoviendo
+                      la armonía con los ciclos naturales.
+                </li>
+                <li>
+                    <b>Eliminación de Desperdicios:</b> El restaurante implementa prácticas para reducir al mínimo el desperdicio de alimentos. Aprovecha al máximo cada ingrediente
+                     y, cuando es posible, recicla y compostea, contribuyendo así a la mitigación del impacto ambiental asociado con la producción y el consumo de alimentos.
+                </li>
+                <li>
+                    <b>Apoyo a la Pesca Sostenible:</b> "La Gastronomía Étoile" se abastece de pescado y mariscos provenientes de prácticas de pesca sostenibles. Esto respalda la conservación
+                     de los ecosistemas marinos y promueve la gestión responsable de los recursos acuáticos.
+                </li>
+                <li>
+                    <b>Concientización del Consumidor:</b> A través de la experiencia gastronómica única que ofrece, el restaurante educa a sus comensales sobre la importancia de 
+                    elegir opciones de alimentación sostenibles. Los sommeliers proporcionan información sobre vinos de productores comprometidos con prácticas agrícolas respetuosas 
+                    con el medio ambiente.
+                </li>
+            </ol>
+        </article>
+        <artile>
+            <h4>Resultados:</h4>
+            <p>
+                "La Gastronomía Étoile" demuestra que la alta cocina puede ir de la mano con prácticas sostenibles. Su compromiso con el ODS 12 no solo mejora la calidad de
+                 la experiencia gastronómica, sino que también contribuye al bienestar del planeta y de la comunidad local, sirviendo como inspiración para otros establecimientos
+                  del sector alimentario hacia una producción y consumo más responsables.
+            </p>
+        </artile>
+    </section>
+
+    <footer>
+        <p>Contacto: Teléfono: <span id="telefono">+34 666 666 666 </span></p>
+        <p>Correo: <span id="correo">lagastronomiaeliote.restaurante.es</span></p>
+        <p>Fundador:<a href="https://drive.google.com/file/d/1pGcq62W3N5Nxv6ymjQ2V2dLz5vS-36xj/view?usp=drive_link" target="_blank">Antoine 
+            Dupont</a> </p>
+
+    <script>
+        // Obtén el elemento del número de teléfono
+        var telefonoElement = document.getElementById('telefono');
+        var correoElemento = document.getElementById('correo');
+
+        correoElemento.addEventListener('click', function(){
+            var respuestacorreo = confirm('¿Quieres escribirnos?');
+
+            if (respuestacorreo){
+                alert('Manda correo a "lagastronomiaeliote.hotmail.com"');
+            }
+            else{
+                alert('Esperamos que contactes con nosotros pronto')
+            }
+        });
+    
+        // Agrega un event listener para el clic en el número de teléfono
+        telefonoElement.addEventListener('click', function() {
+            // Muestra una alerta con dos botones de opción
+            var respuesta = confirm('¿Quieres llamarnos?');
+    
+            // Verifica la respuesta y realiza acciones según la elección del usuario
+            if (respuesta) {
+                // Acción si el usuario elige "Aceptar"
+                alert('Llamando...');
+            } else {
+                // Acción si el usuario elige "Cancelar" o cierra la alerta
+                alert('Llamada cancelada');
+            }
+        });
+    </script>
+    </footer>
+</body>
+</html>

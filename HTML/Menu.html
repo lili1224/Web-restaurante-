@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/qFsS0mT/Leonardo-Vision-XL-I-want-to-generate-a-logo-for-a-restaurant-1.jpg">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/futer.css">
+    <script src="../JavaScript/menu.js" defer></script>
+    <link rel="stylesheet" href="../CSS/Menu.css">
+</head>
+<body>
+    <header>
+        <h1>La Gastronomía Étoile</h1>
+    </header>
+    <nav id="barra_navegador">
+        <div class="desplegable">
+            <button><a id="p_inicio" href="inicio.html" onmouseup="subindex()">Inicio</a></button>
+            <div class="index_content">
+                <a id="p_historia" href="historia.html">Nuestra historia</a>
+                <a id="p_ods" href="ods.html">Objetivos ODS</a>
+            </div>
+        </div>
+        <a id="p_menu" href="index.html">Menús</a>
+        <a id="p_pedir" href="Pedir.html">Pedir</a>
+        <a id="p_coment" href="Reseñas.html">Reseñas</a>
+    </nav>
+    <div class="container_gatos">
+        <div id="Titulo">
+            <h1>MENU</h1>
+        </div>
+        <div class="contenedor1">
+        <h2><i>ENTRANTES</i></h2>
+        <div id="demo"></div>
+        </div>
+        <div class="contenedor2">
+        <h2><i>PRINCIPAL</i></h2>
+        <div id="demo2"></div>
+        </div>
+        <div class="contenedor3">
+        <h2><i>POSTRES</i></h2>
+        <div id="demo3"></div>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Contacto: Teléfono: <span id="telefono">+34 666 666 666 </span></p>
+        <p>Correo: <span id="correo">lagastronomiaeliote.restaurante.es</span></p>
+        <p>Fundador:<a href="https://drive.google.com/file/d/1pGcq62W3N5Nxv6ymjQ2V2dLz5vS-36xj/view?usp=drive_link" target="_blank">Antoine 
+            Dupont</a> </p>
+
+    <script>
+        // Obtén el elemento del número de teléfono
+        var telefonoElement = document.getElementById('telefono');
+        var correoElemento = document.getElementById('correo');
+
+        correoElemento.addEventListener('click', function(){
+            var respuestacorreo = confirm('¿Quieres escribirnos?');
+
+            if (respuestacorreo){
+                alert('Manda correo a "lagastronomiaeliote.hotmail.com"');
+            }
+            else{
+                alert('Esperamos que contactes con nosotros pronto')
+            }
+        });
+    
+        // Agrega un event listener para el clic en el número de teléfono
+        telefonoElement.addEventListener('click', function() {
+            // Muestra una alerta con dos botones de opción
+            var respuesta = confirm('¿Quieres llamarnos?');
+    
+            // Verifica la respuesta y realiza acciones según la elección del usuario
+            if (respuesta) {
+                // Acción si el usuario elige "Aceptar"
+                alert('Llamando...');
+            } else {
+                // Acción si el usuario elige "Cancelar" o cierra la alerta
+                alert('Llamada cancelada');
+            }
+        });
+    </script>
+    </footer>
+</body>
+</html>

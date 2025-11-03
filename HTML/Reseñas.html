@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reseñas</title>
+    <link rel="stylesheet" type="text/css" href="../css/reseñas.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/futer.css"
+</head>
+<body>
+
+    <header>
+        <h1>La Gastronomía Étoile</h1>
+    </header>
+    <nav id="barra_navegador">
+        <div class="desplegable">
+            <button><a id="p_inicio" href="inicio.html" onmouseup="subindex()">Inicio</a></button>
+            <div class="index_content">
+                <a id="p_historia" href="historia.html">Nuestra historia</a>
+                <a id="p_ods" href="ods.html">Objetivos ODS</a>
+            </div>
+        </div>
+        <a id="p_menu" href="index.html">Menús</a>
+        <a id="p_pedir" href="Pedir.html">Pedir</a>
+        <a id="p_coment" href="Reseñas.html">Reseñas</a>
+    </nav>
+
+    <div class="container">
+        <button id="modoOscuroBtn" onclick="toggleModoOscuro()">Modo Oscuro</button>
+
+        <fieldset>
+            <h1>Deja tu reseña</h1>
+            <form id="reviewForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="reseña">Reseña:</label>
+                <textarea id="reseña" rows="5" required></textarea>
+
+                <div id="contenedor-botones">
+                    <button type="reset">Borrar contenido</button> 
+                    <button class="boton" type="submit">+</button>
+                </div>
+            </form>
+        </fieldset>
+
+        <div class="container">
+            <h2>Reseñas</h2>
+
+            <img src="https://i.ibb.co/CwFFcft/tia.jpg" style="height: 50px; height: 50px;">
+            <p><b>Patricia</b></p>
+            <p>Me encantó el servicio y los platos una maravilla, una experiencia para repetir</p> 
+
+            <p style="border-bottom: 1px solid #ccc;"></p>
+
+            <img src="https://i.ibb.co/w7zx6hM/tio.jpg" style="height: 50px; height: 50px;">
+            <p><b>Carlos</b></p>
+            <p>Me pareció un ambiente ideal para ir en familia y tengo ya muchas ganas de repetir</p>
+
+            <p style="border-bottom: 1px solid #ccc;"></p>
+
+            <div id="reviews"></div>
+
+        </div>
+
+        <script>
+            function toggleModoOscuro() {
+                var body = document.body;
+                body.classList.toggle('modo-oscuro');
+                var modoOscuroBtn = document.getElementById('modoOscuroBtn');
+                // Cambia el texto del botón según el estado actual de la clase
+                modoOscuroBtn.textContent = body.classList.contains('modo-oscuro') ? 'Modo Claro' : 'Modo Oscuro';
+            }
+
+            // Recuperar comentarios almacenados localmente al cargar la página
+            window.onload = function () {
+                var storedReviews = localStorage.getItem('reviews');
+                if (storedReviews) {
+                    document.getElementById('reviews').innerHTML = storedReviews;
+                }
+            };
+
+            document.getElementById('reviewForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Obtener los valores del formulario
+                var nombre = document.getElementById('nombre').value;
+                var reseña = document.getElementById('reseña').value;
+                // Crear un elemento de reseña
+                var reviewElement = document.createElement('div');
+                reviewElement.className = 'review';
+                reviewElement.innerHTML = '<img src="https://i.ibb.co/Tg41dcL/blanco.jpg" style="height: 50px; width: 50px;">' + '<h3>' + nombre + '</h3><p>' + reseña + '</p>';
+
+                // Agregar la reseña al área de reseñas
+                document.getElementById('reviews').appendChild(reviewElement);
+
+                // Almacenar comentarios localmente
+                var currentReviews = document.getElementById('reviews').innerHTML;
+                localStorage.setItem('reviews', currentReviews);
+
+                // Limpiar el formulario
+                document.getElementById('nombre').value = '';
+                document.getElementById('reseña').value = '';
+            });
+        </script>
+    </div>
+    <footer>
+        <p>Contacto: Teléfono: <span id="telefono">+34 666 666 666 </span></p>
+        <p>Correo: <span id="correo">lagastronomiaeliote.restaurante.es</span></p>
+        <p>Fundador:<a href="https://drive.google.com/file/d/1pGcq62W3N5Nxv6ymjQ2V2dLz5vS-36xj/view?usp=drive_link" target="_blank">Antoine 
+            Dupont</a> </p>
+
+    <script>
+        // Obtén el elemento del número de teléfono
+        var telefonoElement = document.getElementById('telefono');
+        var correoElemento = document.getElementById('correo');
+
+        correoElemento.addEventListener('click', function(){
+            var respuestacorreo = confirm('¿Quieres escribirnos?');
+
+            if (respuestacorreo){
+                alert('Manda correo a "lagastronomiaeliote.hotmail.com"');
+            }
+            else{
+                alert('Esperamos que contactes con nosotros pronto')
+            }
+        });
+    
+        // Agrega un event listener para el clic en el número de teléfono
+        telefonoElement.addEventListener('click', function() {
+            // Muestra una alerta con dos botones de opción
+            var respuesta = confirm('¿Quieres llamarnos?');
+    
+            // Verifica la respuesta y realiza acciones según la elección del usuario
+            if (respuesta) {
+                // Acción si el usuario elige "Aceptar"
+                alert('Llamando...');
+            } else {
+                // Acción si el usuario elige "Cancelar" o cierra la alerta
+                alert('Llamada cancelada');
+            }
+        });
+    </script>
+    </footer>
+</body>
+</html>

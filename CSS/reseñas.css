@@ -1,0 +1,109 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#reviews {
+    margin-top: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#reviews {
+    margin-top: 20px;
+}
+
+.boton {
+    background-color: sandybrown; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.contenedor-botones{
+    display: flex;
+    margin-right: 20%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+iframe {
+    border: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: sandybrown;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button.boton-circular {
+border-radius: 50%;
+width: 30px;
+height: 30px;
+text-align: center;
+font-size: 18px;
+line-height: 30px; /* Alinear verticalmente el contenido en el centro */
+margin-left: 18px;
+vertical-align: middle;
+}
+.review {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.review h3 {
+    margin-bottom: 8px;
+}
+
+.review p {
+    margin: 0;
+}
+
+.modo-oscuro {
+    background-color: #333;
+    color: #fff;
+    /* Agrega cualquier otro estilo para el modo oscuro aquí */
+}

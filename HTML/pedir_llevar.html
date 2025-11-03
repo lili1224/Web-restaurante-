@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pide adomicilio</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/qFsS0mT/Leonardo-Vision-XL-I-want-to-generate-a-logo-for-a-restaurant-1.jpg">
+    <link rel="stylesheet" href="../CSS/pedir_llevar.css">
+    <link rel="stylesheet" href="../CSS/futer.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="Pide_llevar">Pide adomicilio</h1>
+    </header>
+    <nav id="barra_navegador">
+        <div class="desplegable">
+            <button><a id="p_inicio" href="inicio.html" onmouseup="subindex()">Inicio</a></button>
+            <div class="index_content">
+                <a id="p_historia" href="historia.html">Nuestra historia</a>
+                <a id="p_ods" href="ods.html">Objetivos ODS</a>
+            </div>
+        </div>
+        <a id="p_menu" href="index.html">Menús</a>
+        <a id="p_pedir" href="Pedir.html">Pedir</a>
+        <a id="p_coment" href="Reseñas.html">Reseñas</a>
+    </nav>
+
+    <section>
+        <div class="season-box" onclick="mostrarMenu('Verano')">
+            <img src="https://i.ibb.co/hchzHmx/Whats-App-Image-2023-12-22-at-10-44-35-4.jpg" alt="Verano">
+            <p>Verano</p>
+        </div>
+        <div class="season-box" onclick="mostrarMenu('Otoño')">
+            <img src="https://i.ibb.co/kyFGv2P/Whats-App-Image-2023-12-22-at-10-44-35-5.jpg" alt="otoño">
+            <p>Otoño</p>
+        </div>
+        <div class="season-box" onclick="mostrarMenu('Invierno')">
+            <img src="https://i.ibb.co/HG6Dggz/Whats-App-Image-2023-12-22-at-10-44-35-1.jpg" alt="Invierno">
+            <p>Invierno</p>
+        </div>
+        <div class="season-box" onclick="mostrarMenu('Primavera')">
+            <img src="https://i.ibb.co/xSxNyH4/Whats-App-Image-2023-12-22-at-10-44-35-2.jpg" alt="Primavera">
+            <p>Primavera</p>
+        </div>
+    </section>
+
+    <div id="cart" onclick="toggleCart()">Carrito</div>
+    <div id="cart-content" ondrop="añadiralcarroDrag(event)" ondragover="permDrop(event)">
+        <h2>Carrito <span id="cart-count">(0)</span></h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="total-price">$0.00</span></p>
+        <button id="order-btn" onclick="placeOrder()">Pedir</button>
+    </div>
+
+    <div id="menu-content">
+        <button onclick="ocultarMenu()">Cerrar Menú</button>
+        <h2 id="season-title"></h2>
+        <ul id="menu-items"></ul>
+    </div>
+
+    <footer>
+        <p>Contacto: Teléfono: <span id="telefono">+34 666 666 666 </span></p>
+        <p>Correo: <span id="correo">lagastronomiaeliote.restaurante.es</span></p>
+        <p>Fundador: Antoine Dupont</p>
+    </footer>
+
+    <script src="../JavaScript/pedir_llevar.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

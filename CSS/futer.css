@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: burlywood;
+    color: rgb(160, 106, 56); 
+    text-align: center;
+    padding: 1em;
+    border-bottom: 1px solid rgb(160, 106, 56); /* Línea separadora */
+}
+nav {
+    display: flex;
+    justify-content: space-around; /* Espaciado uniforme */
+    background-color: burlywood;
+    padding: 0.5em 0;
+}
+nav a {
+    color: rgb(160, 106, 56);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    background-color: burlywood;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #d2b48c; /* Cambia el color de fondo al pasar el ratón */
+}
+nav a:visited {
+    color: rgb(160, 106, 56); /* Cambia el color del enlace visitado si es necesario */
+}
+footer {
+    background-color: burlywood;
+    color: rgb(160, 106, 56);
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+}
