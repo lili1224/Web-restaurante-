@@ -1,6 +1,7 @@
 **MEMORIA PROYECTO FINAL**
 
-**La Gastronomía Étoile**  ------------------------------------------------------------------------
+**La Gastronomía Étoile**  
+------------------------------------------------------------------------
   **Equipo**       Marcos Romé García, Alejandro Ferrandis Lozano, Paula
                    Bosch Ramos y Lucía Quesada Moreno
   ---------------- -------------------------------------------------------
